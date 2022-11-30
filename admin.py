@@ -1,0 +1,6 @@
+from django.contrib import admin
+from . import models
+class weighttrackadmin(admin. ModelAdmin):
+    list_display= ('title',)
+
+admin.site.register(models.weighttrack, weighttrackadmin)
